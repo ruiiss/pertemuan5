@@ -1,18 +1,17 @@
 //register.jsx
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useRouter } from "expo-router";
+import { useState } from "react";
 import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
   Alert,
   KeyboardAvoidingView,
   Platform,
-  StyleSheet,
   ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity
 } from "react-native";
-import { useRouter } from "expo-router";
-import { useState } from "react";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function Register() {
   const router = useRouter();
@@ -69,7 +68,6 @@ export default function Register() {
         pathname: "/home",
         params: { userName: name },
       });
-
     } catch (error) {
       console.log("REGISTER ERROR:", error);
       Alert.alert("Error", "Terjadi kesalahan saat registrasi");

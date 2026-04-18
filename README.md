@@ -61,7 +61,7 @@ Aplikasi mobile sederhana menggunakan **React Native (Expo Router)** yang memili
 
 ![Home](https://i.imgur.com/PJ6P5Zk.jpeg)
 
-> ⚠️ Ganti gambar di atas dengan screenshot hasil run aplikasi lo
+> 
 
 ---
 
@@ -77,7 +77,7 @@ Aplikasi mobile sederhana menggunakan **React Native (Expo Router)** yang memili
 
 🔗 https://snack.expo.dev/@ariq_lll/pertemuan5
 
-> ⚠️ Ganti link di atas dengan link Snack lo
+> 
 
 ---
 
