@@ -67,7 +67,7 @@ Aplikasi mobile sederhana menggunakan **React Native (Expo Router)** yang memili
 
 ## 🎥 (Optional) GIF Demo
 
-Kalau mau lebih keren, tambahin GIF:
+(to be added)
 
 ---
 
