@@ -1,50 +1,115 @@
-# Welcome to your Expo app 👋
+# 📱 Simple Auth App (React Native - Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi mobile sederhana menggunakan **React Native (Expo Router)** yang memiliki fitur:
 
-## Get started
+- 🔐 Login
+- 📝 Register
+- 👋 Welcome Screen (Home)
+- 💾 Penyimpanan data menggunakan AsyncStorage
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Fitur Utama
 
-2. Start the app
+### 🔑 Login
 
-   ```bash
-   npx expo start
-   ```
+- Validasi email (RegEx)
+- Validasi password
+- Hanya user yang sudah register yang bisa login
 
-In the output, you'll find options to open the app in a
+### 📝 Register
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Input:
+  - Nama
+  - Email
+  - Phone
+  - Password
+  - Confirm Password
+- Validasi:
+  - Email format valid
+  - Phone hanya angka & minimal 10 digit
+  - Password minimal 6 karakter
+  - Confirm password harus sama
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 🏠 Home
 
-## Get a fresh project
+- Menampilkan:
+- Data dikirim melalui **router params**
 
-When you're ready, run:
+---
+
+## 🛡️ Security Logic
+
+- Email validation menggunakan RegEx
+- Phone validation (numeric only)
+- Password confirmation check
+- Data disimpan secara lokal menggunakan **AsyncStorage**
+
+---
+
+## 📸 Capture Running Program
+
+### 🔹 Register Screen
+
+![Register](https://i.imgur.com/ujbdfIx.jpeg)
+
+### 🔹 Login Screen
+
+![Login](https://i.imgur.com/QyDPeyH.jpeg)
+
+### 🔹 Home Screen
+
+![Home](https://i.imgur.com/PJ6P5Zk.jpeg)
+
+> ⚠️ Ganti gambar di atas dengan screenshot hasil run aplikasi lo
+
+---
+
+## 🎥 (Optional) GIF Demo
+
+Kalau mau lebih keren, tambahin GIF:
+
+---
+
+## 🌐 Expo Snack (Live Demo)
+
+👉 Klik link di bawah untuk mencoba tanpa install:
+
+🔗 https://snack.expo.dev/@ariq_lll/pertemuan5
+
+> ⚠️ Ganti link di atas dengan link Snack lo
+
+---
+
+## ⚙️ Teknologi yang Digunakan
+
+- React Native
+- Expo Router
+- AsyncStorage
+
+---
+
+## 📂 Struktur Project
+
+app/
+├── \_layout.tsx
+├── index.jsx // Login
+├── register.jsx // Register
+└── home.jsx // Home
+
+---
+
+## 🧪 Dummy Account (Testing)
+
+Email : qira123@gmail.com
+
+Password : 123456
+
+---
+
+## 📌 Cara Menjalankan
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
